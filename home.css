@@ -1,0 +1,267 @@
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Poppins ;
+}
+
+
+
+.top1{
+  width: 100%;
+  height: 100vh;
+  background-image: url(12.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment:fixed ;
+  background-size: cover;
+  display: flex; /* Added for centering vertically */
+  justify-content: center; /* Added for centering vertically */
+  align-items: center; /* Added for centering vertically */
+  z-index: 100;
+  text-align: center;
+}
+
+
+
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vw;
+  padding: 15px;
+  z-index: 100;
+  border: none;
+  
+}
+
+
+.logo{
+  color: white;
+  text-decoration: none;
+  background-color:rgba(78, 76, 76, 0.458);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.dropdown{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10vw; 
+  background-color: rgba(78, 76, 76, 0.458);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.dropdown a{
+  color:white;
+  text-decoration: none;
+
+  
+}
+
+.main{
+  
+  width: 100vw;
+  height: 100vh;
+}
+
+.mainTxt{
+  color: white;
+  font-size: 7vw;
+  margin: 0%;
+}
+
+.top2{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5vw;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5vw;
+  padding: 3.5vw;
+  border: none;
+}
+
+.sub{
+  font-size: 2vw;
+}
+
+.img1{  
+  height: 18vw;  
+}
+
+.mid{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: whitesmoke
+}
+
+.Sertxt{
+  font-size: 2vw;
+}
+
+
+.serviceTabs{
+  padding-left:4vw ;
+  padding-right:4vw ;
+  padding-bottom: 3vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: whitesmoke;
+}
+
+.tab1, .tab2, .tab3{
+  width: 25vw;
+}
+
+.tab1 img ,.tab2 img ,.tab3 img{
+  width: 100%; 
+}
+
+.tabtitle{
+  font-size: 2vw;
+  padding: 0.5vw;
+}
+
+
+.tabdescp {
+  font-size: 1.5vw;
+  max-width: 100%; 
+  word-wrap: break-word;
+  padding: 0.5vw;
+}
+
+.bottom1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+  padding-bottom: 50px;
+}
+
+.productText{
+  font-size: 2vw;
+}
+
+.prodctsOverview{
+  padding-left: 3vw;
+  padding-right: 3vw;
+  display: flex;
+  flex-direction: column;
+  row-gap: 6vw;
+}
+.rowP1 ,.rowP2{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.productsTab{
+  width: 28vw;
+  height: 26vw;
+  box-shadow: 0px 0px 5px gray;
+}
+
+.productDes{
+  padding-bottom: 10px;
+  margin: 0px;
+}
+
+.plantImg{
+  width: 100%;
+  height: 100%;
+}
+
+.plantHImg{
+  width: 100%;
+  height: 14vw;
+  object-fit: cover;
+}
+
+
+
+
+footer{
+  position: relative;
+  padding: 13vw 1vw 1vw 4vw ;
+  color: white;
+  background-color: rgb(45, 42, 42);
+  font-size: 1vw;
+}
+
+.footContents{
+  display: flex;
+  flex-direction: row;
+  column-gap: 25vw;
+}
+
+.socialIcons{
+  display: flex;
+  column-gap: 10px;
+}
+
+.signUp{
+  width: 600px;
+  word-wrap: break-word;
+}
+
+.input{
+  background-color:  rgb(45, 42, 42);
+  border-top: none;
+  border-left: none ;
+  border-right: none ;
+  font-size: 1vw;
+  display: block;
+}
+
+.signButton{
+  margin-top: 1.5vw;
+  padding: 1vw 3vw;
+  background-color: rgb(1, 148, 1);
+  border: none;
+  color: white;
+  border-radius: 15px;
+  font-family:Poppins;
+  font-size: 0.9vw;
+}
+
+
+
+
+  @media only screen and (max-width: 697px) {
+    
+    .top1 {
+      background-size: cover /* Adjust for smaller screens */
+    } 
+    
+    .Sertxt{
+      font-size: 5vw;
+    }
+  
+  
+    .img1{  
+      height: 25vw;  
+    }
+  
+  
+    .mainTxt{
+      font-size: 11vw;
+    }
+  
+    .productText{
+      font-size: 5vw;
+    }
+  }
+
+
