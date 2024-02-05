@@ -49,21 +49,45 @@ header{
   border-radius: 20px;
 }
 
-.dropdown{
-  display: flex;
-  flex-direction: row;
-  column-gap: 10vw; 
-  background-color: rgba(78, 76, 76, 0.458);
-  padding: 10px;
-  border-radius: 20px;
+
+.mainButton {
+  background-color: rgb(213, 154, 82);
+  color: white;
+  border: none;
+  width: 9vw;
+  height: 4vw;
+  border-radius: 1vw;
+  border-bottom-right-radius: 0px;
+  font-size: 1.5vw;
 }
 
-.dropdown a{
-  color:white;
+.dropDown {
+  display: none;
+  position: absolute;
+  background-color: rgb(206, 166, 116);
+  width: 12vw;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  z-index: 1;
+  top: 80%;
+  right: 3%;
+}
+
+.dropDown ul {
+  list-style: none;
+}
+
+.dropDown a {
+  color: white;
   text-decoration: none;
-
-  
+  display: block;
+  padding: 2vw;
 }
+
+.show {
+  display: block;
+}
+
 
 .main{
   
