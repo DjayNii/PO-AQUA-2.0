@@ -34,16 +34,10 @@ header {
   padding-right: 3vw;
   z-index: 100;
   border: none;
-  background: linear-gradient(
-    to right bottom,
-    rgba(0, 0, 0, 0.9),
-    rgba(0, 0, 0, 0.5)
-  );
-  backdrop-filter: blur(5px);
 }
 
 .logo {
-  color: whitesmoke;
+  color: rgba(0, 0, 0, 0.66);
   text-decoration: none;
   /* background-color:rgba(78, 76, 76, 0.458); */
   padding: 10px;
@@ -53,8 +47,8 @@ header {
 .mainButton {
   background: linear-gradient(
     to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.3)
   );
   color: white;
   border: none;
@@ -106,6 +100,10 @@ header {
   color: white;
   font-size: 7vw;
   margin: 0%;
+}
+
+.mainTxt span {
+  display: inline-block;
 }
 
 .top2 {
@@ -199,6 +197,11 @@ header {
   justify-content: space-between;
 }
 
+.rowP1 .productsTab {
+  width: 28vw;
+  height: 30vw;
+  box-shadow: 0px 0px 5px gray;
+}
 .productsTab {
   width: 28vw;
   height: 26vw;
@@ -221,6 +224,33 @@ header {
   object-fit: cover;
 }
 
+/* BOTTOM 2 STARTS HERE */
+
+.movingText {
+  background: linear-gradient(#9ef01a, #70e000);
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+  padding: 2vw 0;
+}
+
+.quote {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 1.5vw;
+  gap: 1.5vw;
+  transform: translateX(-80%);
+}
+.quote h4 {
+  font-size: 5vh;
+  margin: 0;
+}
+
+.quote img {
+  height: 7vh;
+  width: 3.5vw;
+}
 footer {
   position: relative;
   padding: 13vw 1vw 1vw 4vw;
@@ -284,5 +314,15 @@ footer {
 
   .productText {
     font-size: 5vw;
+  }
+
+  .quote h4 {
+    font-size: 3vh;
+    margin: 0;
+  }
+
+  .quote img {
+    height: 3.5vh;
+    width: 6.5vw;
   }
 }
