@@ -2,7 +2,7 @@ html,
 body {
   margin: 0;
   height: 100%;
-  font-family: Poppins;
+  font-family: "Dela Gothic One", sans-serif;
 }
 
 .top1 {
@@ -100,6 +100,7 @@ header {
   color: white;
   font-size: 7vw;
   margin: 0%;
+  pointer-events: none;
 }
 
 .mainTxt span {
@@ -166,62 +167,83 @@ header {
 
 .tabdescp {
   font-size: 1.5vw;
+  color: gray;
   max-width: 100%;
   word-wrap: break-word;
   padding: 0.5vw;
+  font-weight: 300;
 }
+
+/* BOTTOM 1 STARTS HERE  */
 
 .bottom1 {
-  position: relative;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: white;
-  padding-bottom: 50px;
-}
-
-.productText {
-  font-size: 2vw;
-}
-
-.prodctsOverview {
-  padding-left: 3vw;
-  padding-right: 3vw;
-  display: flex;
-  flex-direction: column;
-  row-gap: 6vw;
-}
-.rowP1,
-.rowP2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.rowP1 .productsTab {
-  width: 28vw;
-  height: 30vw;
-  box-shadow: 0px 0px 5px gray;
-}
-.productsTab {
-  width: 28vw;
-  height: 26vw;
-  box-shadow: 0px 0px 5px gray;
-}
-
-.productDes {
-  padding-bottom: 10px;
-  margin: 0px;
-}
-
-.plantImg {
   width: 100%;
   height: 100%;
+  flex-direction: column;
 }
 
-.plantHImg {
+.productsOverview {
+  flex: 8;
+  background: linear-gradient(to top right, #fb2d00, #b00200);
+  display: flex;
+  flex-direction: column;
+  padding: 2vh 0;
+  color: white;
+}
+
+.productTitle {
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 7vh;
+}
+
+.productDetails {
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  padding: 0 2vh;
+}
+
+.productDetails img {
+  width: 76vh;
+  height: 51vh;
+  border-radius: 20%;
+  transform: translateY(13%);
+}
+
+.productdescrpiton {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.prodcutMenu {
+  flex: 2;
+  padding: 5vh 3vw;
+}
+
+.menu {
   width: 100%;
-  height: 14vw;
-  object-fit: cover;
+  height: 100%;
+  border-radius: 20vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu img {
+  cursor: pointer;
+}
+
+.selectionTab {
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* BOTTOM 2 STARTS HERE */
@@ -291,7 +313,6 @@ footer {
   border: none;
   color: white;
   border-radius: 15px;
-  font-family: Poppins;
   font-size: 0.9vw;
 }
 
@@ -316,13 +337,8 @@ footer {
     font-size: 5vw;
   }
 
-  .quote h4 {
-    font-size: 3vh;
-    margin: 0;
-  }
-
-  .quote img {
-    height: 3.5vh;
-    width: 6.5vw;
+  .bottom2 {
+    display: none;
+    pointer-events: none;
   }
 }

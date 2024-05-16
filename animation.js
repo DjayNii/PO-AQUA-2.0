@@ -116,3 +116,50 @@ window.addEventListener("wheel", function (details) {
     });
   }
 });
+
+//product animation starts here
+
+const tomato = document.querySelector(".tomato");
+const pumpkin = document.querySelector(".pumpkin");
+
+pumpkin.addEventListener("click", function () {
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #F68B3C, #E36203)",
+    duration: 2,
+  });
+  gsap.to(
+    ".productDetails img",
+    {
+      attr: { src: "./products/pumpkin.jpg" },
+      duration: 2,
+    },
+    "<"
+  );
+  gsap.to(".selectionTab", {
+    backgroundColor: "white",
+  });
+  gsap.to(".selectionTab:nth-of-type(2)", {
+    backgroundColor: "#70e000",
+  });
+});
+
+tomato.addEventListener("click", function () {
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #fb2d00, #b00200)",
+    duration: 2,
+  });
+  gsap.to(
+    ".productDetails img",
+    {
+      attr: { src: "./products/tomato.jpg" },
+      duration: 2,
+    },
+    "<"
+  );
+  gsap.to(".selectionTab", {
+    backgroundColor: "white",
+  });
+  gsap.to(".selectionTab:nth-of-type(1)", {
+    backgroundColor: "#70e000",
+  });
+});
