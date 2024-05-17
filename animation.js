@@ -121,45 +121,320 @@ window.addEventListener("wheel", function (details) {
 
 const tomato = document.querySelector(".tomato");
 const pumpkin = document.querySelector(".pumpkin");
+const cauilflower = document.querySelector(".cauliflower");
+const bellPepper = document.querySelector(".BellPepper");
+const lettuce = document.querySelector(".Lettuce");
+const fish = document.querySelector(".fish");
 
-pumpkin.addEventListener("click", function () {
-  gsap.to(".productsOverview", {
-    background: "linear-gradient(to top right, #F68B3C, #E36203)",
-    duration: 2,
-  });
-  gsap.to(
-    ".productDetails img",
-    {
-      attr: { src: "./products/pumpkin.jpg" },
-      duration: 2,
-    },
-    "<"
-  );
-  gsap.to(".selectionTab", {
-    backgroundColor: "white",
-  });
-  gsap.to(".selectionTab:nth-of-type(2)", {
-    backgroundColor: "#70e000",
-  });
-});
+const productNAME = document.querySelector(
+  ".productdescrpiton > p:nth-child(1)"
+);
+const productPrice = document.querySelector(
+  ".productdescrpiton > p:nth-child(2)"
+);
+
+const productdescrpiton = document.querySelector(
+  ".productdescrpiton > p:nth-child(3)"
+);
 
 tomato.addEventListener("click", function () {
+  productNAME.innerHTML = "Tomato";
+  productPrice.innerHTML = "Price : 2$";
+  productdescrpiton.innerHTML =
+    "Ripe and juicy tomato, bursting with fresh flavor. Perfect for salads, sandwiches, or just enjoying on its own!";
+
+  // animation part
   gsap.to(".productsOverview", {
     background: "linear-gradient(to top right, #fb2d00, #b00200)",
     duration: 2,
   });
-  gsap.to(
+
+  gsap.fromTo(
     ".productDetails img",
+    2,
+    { opacity: 0, x: 50 },
     {
       attr: { src: "./products/tomato.jpg" },
-      duration: 2,
-    },
-    "<"
+      opacity: 1,
+      x: 0,
+    }
   );
+
+  gsap.fromTo(
+    ".productdescrpiton p",
+    1,
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.5 }
+  );
+  //for menu tab
+
+  gsap.to(".prodcutMenu", {
+    background: "linear-gradient(  #fb2d00, #b00200)",
+    border: "none ",
+  });
+
   gsap.to(".selectionTab", {
-    backgroundColor: "white",
+    background: "linear-gradient(  #fb2d00, #b00200)",
   });
-  gsap.to(".selectionTab:nth-of-type(1)", {
-    backgroundColor: "#70e000",
+
+  gsap.fromTo(
+    ".selectionTab:nth-of-type(1)",
+    { rotate: 30 },
+    {
+      background: "white",
+      rotate: 0,
+    }
+  );
+});
+pumpkin.addEventListener("click", function () {
+  productNAME.innerHTML = "Pumpkin";
+  productPrice.innerHTML = "Price : 1$";
+  productdescrpiton.innerHTML =
+    "Freshly harvested pumpkin! Its vibrant orange flesh is perfect for roasting, pureeing into soups, or baking into delicious pies";
+
+  // animation part
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #F68B3C, #E36203)",
+    duration: 2,
   });
+
+  gsap.fromTo(
+    ".productDetails img",
+    2,
+    { opacity: 0, x: 50 },
+    {
+      attr: { src: "./products/pumpkin.jpg" },
+      opacity: 1,
+      x: 0,
+    }
+  );
+
+  gsap.fromTo(
+    ".productdescrpiton p",
+    1,
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.5 }
+  );
+  //for menu tab
+
+  gsap.to(".prodcutMenu", {
+    background: "linear-gradient( #F68B3C, #E36203)",
+    border: "none ",
+  });
+  gsap.to(".selectionTab", {
+    background: "linear-gradient( #F68B3C, #E36203)",
+  });
+
+  gsap.fromTo(
+    ".selectionTab:nth-of-type(2)",
+    { rotate: 30 },
+    {
+      background: "white",
+      rotate: 0,
+    }
+  );
+});
+
+cauilflower.addEventListener("click", function () {
+  productNAME.innerHTML = "Cauilflower";
+  productPrice.innerHTML = "Price : 2.99$";
+  productdescrpiton.innerHTML =
+    "A beautiful head of cauliflower with tightly packed, snow-white florets. Perfect for roasting, ricing, or enjoying raw";
+
+  // animation part
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #73A942, #245501)",
+    duration: 2,
+  });
+
+  gsap.fromTo(
+    ".productDetails img",
+    2,
+    { opacity: 0, x: 50 },
+    {
+      attr: { src: "./products/cauliflower.jpg" },
+      objectFit: "cover",
+      objectPosition: "50% 50%",
+      opacity: 1,
+      x: 0,
+    }
+  );
+
+  gsap.fromTo(
+    ".productdescrpiton p",
+    1,
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.5 }
+  );
+  //for menu tab
+
+  gsap.to(".prodcutMenu", {
+    background: "linear-gradient( #73A942, #245501)",
+    border: "none ",
+  });
+  gsap.to(".selectionTab", {
+    background: "linear-gradient( #73A942, #245501)",
+  });
+
+  gsap.fromTo(
+    ".selectionTab:nth-of-type(3)",
+    { rotate: 30 },
+    {
+      background: "white",
+      rotate: 0,
+    }
+  );
+});
+
+bellPepper.addEventListener("click", function () {
+  productNAME.innerHTML = "Bell Pepper";
+  productPrice.innerHTML = "Price : 1.99$";
+  productdescrpiton.innerHTML =
+    "A deep red bell pepper, blistered and fragrant from roasting. Hints of charring peek through the vibrant color.";
+
+  // animation part
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #B00200, #6A040F)",
+    duration: 2,
+  });
+
+  gsap.fromTo(
+    ".productDetails img",
+    2,
+    { opacity: 0, x: 50 },
+    {
+      attr: { src: "./products/bellPepper.jpg" },
+      opacity: 1,
+      x: 0,
+      objectFit: "cover",
+    }
+  );
+
+  gsap.fromTo(
+    ".productdescrpiton p",
+    1,
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.5 }
+  );
+  //for menu tab
+
+  gsap.to(".prodcutMenu", {
+    background: "linear-gradient(  #B00200, #6A040F)",
+    border: "none ",
+  });
+
+  gsap.to(".selectionTab", {
+    background: "linear-gradient(  #B00200, #6A040F)",
+  });
+
+  gsap.fromTo(
+    ".selectionTab:nth-of-type(4)",
+    { rotate: 30 },
+    {
+      background: "white",
+      rotate: 0,
+    }
+  );
+});
+
+lettuce.addEventListener("click", function () {
+  productNAME.innerHTML = "Lettuce";
+  productPrice.innerHTML = "Price : 1$";
+  productdescrpiton.innerHTML =
+    "Crisp and refreshing lettuce, perfect for adding a light, leafy base to your salads. Enjoy its subtle sweetness and cool crunch";
+
+  // animation part
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #9ef01a, #38b000)",
+    duration: 2,
+  });
+
+  gsap.fromTo(
+    ".productDetails img",
+    2,
+    { opacity: 0, x: 50 },
+    {
+      attr: { src: "./products/lettuce.jpg" },
+      opacity: 1,
+      x: 0,
+      objectFit: "cover",
+      objectPosition: "bottom",
+    }
+  );
+
+  gsap.fromTo(
+    ".productdescrpiton p",
+    1,
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.5 }
+  );
+  //for menu tab
+
+  gsap.to(".prodcutMenu", {
+    background: "linear-gradient(  #9ef01a, #38b000)",
+    border: "none ",
+  });
+
+  gsap.to(".selectionTab", {
+    background: "linear-gradient(  #9ef01a, #38b000)",
+  });
+
+  gsap.fromTo(
+    ".selectionTab:nth-of-type(5)",
+    { rotate: 30 },
+    {
+      background: "white",
+      rotate: 0,
+    }
+  );
+});
+
+fish.addEventListener("click", function () {
+  productNAME.innerHTML = "Fish";
+  productPrice.innerHTML = "Price : 4$";
+  productdescrpiton.innerHTML =
+    "Fresh, flaky fish with a delicate sweetness and a hint of the sea. Perfect for simple preparations that allow its natural flavor to shine.";
+
+  // animation part
+  gsap.to(".productsOverview", {
+    background: "linear-gradient(to top right, #ade8f4, #48cae4)",
+    duration: 2,
+  });
+
+  gsap.fromTo(
+    ".productDetails img",
+    2,
+    { opacity: 0, x: 50 },
+    {
+      attr: { src: "./products/fish.jpg" },
+      opacity: 1,
+      x: 0,
+    }
+  );
+
+  gsap.fromTo(
+    ".productdescrpiton p",
+    1,
+    { y: 50, opacity: 0 },
+    { y: 0, opacity: 1, stagger: 0.5 }
+  );
+  //for menu tab
+
+  gsap.to(".prodcutMenu", {
+    background: "linear-gradient(#ade8f4, #48cae4)",
+    border: "none ",
+  });
+
+  gsap.to(".selectionTab", {
+    background: "linear-gradient(  #ade8f4, #48cae4)",
+  });
+
+  gsap.fromTo(
+    ".selectionTab:nth-of-type(6)",
+    { rotate: 30 },
+    {
+      background: "white",
+      rotate: 0,
+    }
+  );
 });

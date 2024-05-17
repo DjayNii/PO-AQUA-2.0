@@ -190,6 +190,7 @@ header {
   flex-direction: column;
   padding: 2vh 0;
   color: white;
+  overflow: hidden;
 }
 
 .productTitle {
@@ -220,11 +221,23 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 16vh;
+}
+
+.productdescrpiton > p:nth-child(1) {
+  font-size: 10vh;
+  margin: 0;
+}
+
+.productdescrpiton > p:nth-child(2) {
+  font-size: 5vh;
+  margin: 0;
 }
 
 .prodcutMenu {
   flex: 2;
-  padding: 5vh 3vw;
+  padding: 0 3vw;
+  background: linear-gradient(#fb2d00, #b00200);
 }
 
 .menu {
@@ -240,12 +253,15 @@ header {
 }
 
 .selectionTab {
-  border-radius: 20%;
+  border-radius: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.selectionTab:nth-child(1) {
+  background-color: white;
+}
 /* BOTTOM 2 STARTS HERE */
 
 .movingText {
