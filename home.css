@@ -57,6 +57,7 @@ header {
   border-radius: 1vw;
   border-bottom-right-radius: 0px;
   font-size: 1.5vw;
+  font-family: "Dela Gothic One", sans-serif;
 }
 
 .dropDown {
@@ -116,10 +117,12 @@ header {
   min-height: 5vw;
   padding: 3.5vw;
   border: none;
+  font-family: "Pridi", serif;
+  font-weight: 200;
 }
 
 .sub {
-  font-size: 2vw;
+  font-size: 4.2vh;
 }
 
 .img1 {
@@ -171,7 +174,8 @@ header {
   max-width: 100%;
   word-wrap: break-word;
   padding: 0.5vw;
-  font-weight: 300;
+  font-family: "Pridi", serif;
+  font-weight: 200productdescrpiton;
 }
 
 /* BOTTOM 1 STARTS HERE  */
@@ -232,6 +236,17 @@ header {
 .productdescrpiton > p:nth-child(2) {
   font-size: 5vh;
   margin: 0;
+  font-family: "Pridi", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.productdescrpiton > p:nth-child(3) {
+  font-family: "Pridi", serif;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 3.5vh;
+  text-align: center;
 }
 
 .prodcutMenu {
@@ -289,12 +304,80 @@ header {
   height: 7vh;
   width: 3.5vw;
 }
+
+.bottom3 {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  background-image: url(helpingimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradbackground {
+  width: 90%;
+  height: 90%;
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 21, 21, 0.115),
+    rgba(21, 21, 21, 0.125)
+  );
+}
+
+.textbox {
+  width: 50%;
+  height: 50%;
+  transform: translatex(100%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.textbox h1 {
+  font-size: 4vh;
+  color: rgba(255, 255, 255, 0.932);
+  margin: 0%;
+}
+
+.textbox2 {
+  width: 80%;
+  height: 50%;
+  text-align: center;
+  display: flex;
+  align-items: flex-end;
+}
+
+.textbox2 h1 {
+  font-size: 12vh;
+  color: rgba(255, 255, 255, 0.932);
+  margin: 0%;
+}
+
 footer {
   position: relative;
-  padding: 13vw 1vw 1vw 4vw;
+  padding: 0vw 1vw 5vw 4vw;
   color: white;
   background-color: rgb(45, 42, 42);
   font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  gap: 10vw;
+}
+
+.CONTACT {
+  transform: translateY(10%);
+  width: 90%;
+  height: 30%;
+}
+
+.CONTACT h1 {
+  font-size: 10vh;
 }
 
 .footContents {
