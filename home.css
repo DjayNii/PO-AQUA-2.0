@@ -529,4 +529,37 @@ footer {
     flex-direction: column;
     align-items: center;
   }
+
+  .textbox {
+    width: 70%;
+    height: 30%;
+    transform: translatex(35%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  .textbox h1 {
+    font-size: 2vh;
+    color: rgba(255, 255, 255, 0.932);
+    margin: 0%;
+    font-weight: 400;
+    text-align: right;
+  }
+  .textbox2 {
+    width: 100%;
+    height: 30%;
+    transform: translateY(130%);
+    text-align: center;
+    display: flex;
+  }
+  .textbox2 h1 {
+    font-size: 5.8vh;
+    color: rgba(255, 255, 255, 0.932);
+    margin: 0%;
+  }
+  .CONTACT h1 {
+    font-size: 2vh;
+  }
 }
