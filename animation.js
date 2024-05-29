@@ -178,7 +178,7 @@ tomato.addEventListener("click", function () {
   });
 
   gsap.fromTo(
-    ".selectionTab:nth-of-type(1)",
+    ".menuRow1 .selectionTab:nth-of-type(1)",
     { rotate: 30 },
     {
       background: "white",
@@ -226,7 +226,7 @@ pumpkin.addEventListener("click", function () {
   });
 
   gsap.fromTo(
-    ".selectionTab:nth-of-type(2)",
+    ".menuRow1 .selectionTab:nth-of-type(2)",
     { rotate: 30 },
     {
       background: "white",
@@ -277,7 +277,7 @@ cauilflower.addEventListener("click", function () {
   });
 
   gsap.fromTo(
-    ".selectionTab:nth-of-type(3)",
+    ".menuRow1 .selectionTab:nth-of-type(3)",
     { rotate: 30 },
     {
       background: "white",
@@ -328,7 +328,7 @@ bellPepper.addEventListener("click", function () {
   });
 
   gsap.fromTo(
-    ".selectionTab:nth-of-type(4)",
+    ".menuRow2 .selectionTab:nth-of-type(1)",
     { rotate: 30 },
     {
       background: "white",
@@ -380,7 +380,7 @@ lettuce.addEventListener("click", function () {
   });
 
   gsap.fromTo(
-    ".selectionTab:nth-of-type(5)",
+    ".menuRow2 .selectionTab:nth-of-type(2)",
     { rotate: 30 },
     {
       background: "white",
@@ -430,11 +430,76 @@ fish.addEventListener("click", function () {
   });
 
   gsap.fromTo(
-    ".selectionTab:nth-of-type(6)",
+    ".menuRow2 .selectionTab:nth-of-type(3)",
     { rotate: 30 },
     {
       background: "white",
       rotate: 0,
     }
   );
+});
+
+let mm = gsap.matchMedia();
+
+mm.add("(max-width: 697px)", () => {
+  tomato.addEventListener("click", function () {
+    gsap.fromTo(
+      ".menuRow1 .selectionTab:nth-of-type(1)",
+      { rotate: 30 },
+      {
+        background: "linear-gradient(to top right, rgba(0,0,0,0.9), #b00200)",
+        rotate: 0,
+      }
+    );
+  });
+  lettuce.addEventListener("click", function () {
+    gsap.fromTo(
+      ".menuRow2 .selectionTab:nth-of-type(2)",
+      { rotate: 30 },
+      {
+        background: "linear-gradient(to top right, rgba(0,0,0,0.9),#38b000)",
+        rotate: 0,
+      }
+    );
+  });
+  pumpkin.addEventListener("click", function () {
+    gsap.fromTo(
+      ".menuRow1 .selectionTab:nth-of-type(2)",
+      { rotate: 30 },
+      {
+        background: "linear-gradient(to top right, rgba(0,0,0,0.9),  #E36203)",
+        rotate: 0,
+      }
+    );
+  });
+  bellPepper.addEventListener("click", function () {
+    gsap.fromTo(
+      ".menuRow2 .selectionTab:nth-of-type(1)",
+      { rotate: 30 },
+      {
+        background: "linear-gradient(to top right, rgba(0,0,0,0.9), #6A040F)",
+        rotate: 0,
+      }
+    );
+  });
+  cauilflower.addEventListener("click", function () {
+    gsap.fromTo(
+      ".menuRow1 .selectionTab:nth-of-type(3)",
+      { rotate: 30 },
+      {
+        background: "linear-gradient(to top right, rgba(0,0,0,0.9), #245501)",
+        rotate: 0,
+      }
+    );
+  });
+  fish.addEventListener("click", function () {
+    gsap.fromTo(
+      ".menuRow2 .selectionTab:nth-of-type(3)",
+      { rotate: 30 },
+      {
+        background: "linear-gradient(to top right, rgba(0,0,0,0.9), #48cae4)",
+        rotate: 0,
+      }
+    );
+  });
 });
